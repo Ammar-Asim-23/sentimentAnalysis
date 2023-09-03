@@ -11,7 +11,7 @@ reddit = praw.Reddit(client_id = client_id,
                     client_secret = client_id_secret,
                     user_agent = user_agent)
 
-subreddit = reddit.subreddit("onepiece")
+subreddit = reddit.subreddit("PakCricket")
 
 def get_subreddit_info(subreddit):
     # Display the name of the Subreddit
@@ -67,7 +67,7 @@ def getComments(posts):
 current_datetime = datetime.date.today()
 str_current_datetime = current_datetime.strftime('%m/%d/%Y')
 
-pastWeekPosts, timeTaken = getPosts(subreddit, "month", 100)
+pastWeekPosts, timeTaken = getPosts(subreddit, "month", 1000)
 posts_df = pd.DataFrame(pastWeekPosts)
 print("Done")
 print("Time taken: ", timeTaken)
