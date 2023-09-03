@@ -39,9 +39,6 @@ def getPosts(subreddit, time_filter, limit):
     elapsedTime = endTime - startTime
     return posts_data, elapsedTime
 
-# Saving the past weeks posts data into a dataframe
-# top_posts_df = pd.DataFrame(posts_data)
-# top_posts_df.to_csv("Top_This_Week.csv", index=False)
 
 def getComments(posts):
     print("Getting comments...")
@@ -75,7 +72,7 @@ posts_df = pd.DataFrame(pastWeekPosts)
 print("Done")
 print("Time taken: ", timeTaken)
 print("Number of Posts collected: ", len(posts_df.index))
-file = "server/Data/redditData/post.csv"
+file = "redditData/post.csv"
 posts_df.to_csv(file, index = False)
 
 pastWeekComments, timeTaken = getComments(pastWeekPosts)
@@ -83,5 +80,5 @@ comments_df = pd.DataFrame(pastWeekComments)
 print("Done")
 print("Time taken: ", timeTaken)
 print("Number of Comments collected: ", len(comments_df.index))
-file = "server/Data/redditData/comment.csv"
+file = "redditData/comment.csv"
 comments_df.to_csv(file, index = False)
