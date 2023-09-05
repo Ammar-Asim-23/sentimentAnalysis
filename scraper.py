@@ -5,7 +5,9 @@ import pandas as pd
 from praw.models import MoreComments
 import datetime
 import time
-
+'''
+Please add your own client_id, user_agent and client_secret. You can get those by setting up a reddit Project.
+'''
 reddit = praw.Reddit(client_id = client_id,
                     client_secret = client_id_secret,
                     user_agent = user_agent)
