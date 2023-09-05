@@ -1,6 +1,6 @@
-# sentimentAnalysis
-**Reddit Sentiment Analysis GitHub Repository
-Project Description**
+
+#Reddit Sentiment Analysis GitHub Repository
+**Project Description**
 This GitHub repository contains a Python project for analyzing the sentiment of headlines from the Reddit politics subreddit using the PRAW (Python Reddit API Wrapper) library and sentiment analysis tools.
 
 **Project Features
