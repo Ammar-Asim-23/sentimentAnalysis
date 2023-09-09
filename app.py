@@ -17,7 +17,7 @@ def index():
         prediction = model.predict(headline)[0]
 
         # You can map the prediction to 'positive', 'negative', or 'neutral' based on your model's classes
-        sentiment = 'positive' if prediction == '1' else 'negative' if prediction == '0' else 'neutral'
+        sentiment = 'positive' if prediction == '1' else 'negative' if prediction == '-1' else 'neutral' if prediction == '0' else 'Sorry not sure'
 
         return render_template('predict.html', sentiment=sentiment)
 
