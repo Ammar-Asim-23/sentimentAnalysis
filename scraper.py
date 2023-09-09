@@ -26,9 +26,6 @@ def get_subreddit_info(subreddit):
     # Display the description of the Subreddit
     print("Description:", subreddit.description)
 
-
-
-
 def getHeadlines(subreddit):
     print("Getting headlines...")
     startTime = time.time()
@@ -50,5 +47,5 @@ print("Done")
 print("Time taken: ", timeTaken)
 print("Number of Headlines collected: ", len(headlines_df.index))
 file = "redditData/headlines.csv"
-headlines_df.to_csv(file, index = False)
+headlines_df.to_csv(file, index = False, mode='a')
 
