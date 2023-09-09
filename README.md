@@ -8,9 +8,9 @@ The Logistic Regression (lr_model) used in this project is a supervised learning
 **Model Training**
 The lr_model is trained on a dataset of headlines and their corresponding sentiment labels. The sentiment labels are typically encoded as integers, where:
 
-0 represents negative sentiment
-1 represents neutral sentiment
-2 represents positive sentiment
+-1 represents negative sentiment
+0 represents neutral sentiment
+1 represents positive sentiment
 The model learns to classify headlines into one of these three sentiment categories based on the textual features extracted from the headlines.
 
 **Model Evaluation**
