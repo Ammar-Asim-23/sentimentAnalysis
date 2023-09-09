@@ -12,7 +12,7 @@ reddit = praw.Reddit(client_id = client_id,
                     client_secret = client_id_secret,
                     user_agent = user_agent)
 
-subreddit = reddit.subreddit("politics")
+subreddit = reddit.subreddit("TheMajorityReport")
 
 
 
@@ -31,7 +31,7 @@ def getHeadlines(subreddit):
     startTime = time.time()
     # Collecting latest headlines
     headlines = set()
-    for submission in reddit.subreddit('politics').new(limit=None):
+    for submission in subreddit.new(limit=None):
         headlines.add(submission.title)
     # print(posts_data)
     endTime = time.time()
